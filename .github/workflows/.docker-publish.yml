@@ -17,7 +17,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: lkobari
+          username: lkovari
           password: ${{ secrets.GHCR_PAT }}
 
       - name: Build and push Docker image
@@ -25,4 +25,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/lkobari/cv:latest
+          tags: ghcr.io/lkovari/cv:latest
